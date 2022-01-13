@@ -5,8 +5,8 @@ class Api::V1::TracksController < ApplicationController
     render json: @tracks
   end
 
-  def top_50
-    # top 50 playlist for 2021 tracks
+  def top_100
+    # top 50 playlist for 2021 track
     # https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF
     s_tracks = RSpotify::Playlist.find("spotify","37i9dQZEVXbNG2KDcFcKOF").tracks
     @tracks = s_tracks.map do |s_track|
