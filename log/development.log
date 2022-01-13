@@ -1,0 +1,522 @@
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE DATABASE "mod-4-proj-music-app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "mod-4-proj-music-app_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3813983994894142860)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3813983994894142860)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-01-13 04:31:33 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nirajpatel/.rvm/gems/ruby-2.7.4/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nirajpatel/.rvm/gems/ruby-2.7.4/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nirajpatel/.rvm/gems/ruby-2.7.4/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2022-01-13 04:34:25 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nirajpatel/.rvm/gems/ruby-2.7.4/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2022-01-13 04:34:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-01-13 04:34:31 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nirajpatel/.rvm/gems/ruby-2.7.4/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nirajpatel/.rvm/gems/ruby-2.7.4/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2022-01-13 04:34:50 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"name"=>"Niraj", "username"=>"test2823", "password"=>"[FILTERED]", "user"=>{"name"=>"Niraj", "username"=>"test2823"}}
+Unpermitted parameter: :user
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13
+  [1m[36mUser Exists (8.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "test2823"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:13
+  [1m[36mUser Create (37.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Niraj"], ["username", "test2823"], ["password_digest", "$2a$12$efymiAhhIqKUDqgNDnoczeyDsJQ8rhi293zMJ.F2soasU9PFqO29q"], ["created_at", "2022-01-13 09:34:50.423301"], ["updated_at", "2022-01-13 09:34:50.423301"]]
+  ↳ app/controllers/api/v1/users_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13
+  [1m[36mUser Exists (4.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "test2823"], ["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:14
+[active_model_serializers]   [1m[36mReview Load (2.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = $1[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:16
+[active_model_serializers]   [1m[36mTrack Load (5.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "reviews" ON "tracks"."id" = "reviews"."track_id" WHERE "reviews"."user_id" = $1[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:16
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (62.11ms)
+Completed 201 Created in 456ms (Views: 37.0ms | ActiveRecord: 158.4ms)
+
+
+Started GET "/api/v1/users/16/playlists" for ::1 at 2022-01-13 04:34:50 -0500
+Started GET "/api/v1/tracks/random" for ::1 at 2022-01-13 04:34:50 -0500
+Started GET "/api/v1/tracks/top_100" for ::1 at 2022-01-13 04:34:50 -0500
+Started GET "/api/v1/playlist_tracks" for ::1 at 2022-01-13 04:34:50 -0500
+Started GET "/api/v1/tracks" for ::1 at 2022-01-13 04:34:50 -0500
+Processing by Api::V1::PlaylistsController#index as */*
+  Parameters: {"user_id"=>"16"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mPlaylist Load (27.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/api/v1/playlists_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 49ms (Views: 6.9ms | ActiveRecord: 31.3ms)
+
+
+Processing by Api::V1::TracksController#top_100 as */*
+Processing by Api::V1::TracksController#random as */*
+Processing by Api::V1::TracksController#index as */*
+Processing by Api::V1::PlaylistTracksController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mTrack Load (42.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/api/v1/tracks_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.84ms)
+Completed 200 OK in 2662ms (Views: 1022.5ms | ActiveRecord: 9.5ms)
+
+
+[active_model_serializers]   [1m[36mReview Load (79.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+  [1m[36mPlaylistTrack Load (93.4ms)[0m  [1m[34mSELECT "playlist_tracks".* FROM "playlist_tracks"[0m
+  ↳ app/controllers/api/v1/playlist_tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (90.71ms)
+Completed 200 OK in 2665ms (Views: 102.5ms | ActiveRecord: 12.0ms)
+
+
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (8.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (6.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (155.86ms)
+Completed 200 OK in 2726ms (Views: 2506.0ms | ActiveRecord: 211.1ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.07ms)
+Completed 200 OK in 2745ms (Views: 11.2ms | ActiveRecord: 177.1ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2022-01-13 04:41:33 -0500
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"test2823", "password"=>"[FILTERED]", "auth"=>{"username"=>"test2823", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2823"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (6.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = $1[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auth_controller.rb:8
+[active_model_serializers]   [1m[36mTrack Load (6.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "reviews" ON "tracks"."id" = "reviews"."track_id" WHERE "reviews"."user_id" = $1[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auth_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (17.3ms)
+Completed 202 Accepted in 287ms (Views: 5.4ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/api/v1/users/16/playlists" for ::1 at 2022-01-13 04:41:34 -0500
+Started GET "/api/v1/playlist_tracks" for ::1 at 2022-01-13 04:41:34 -0500
+Started GET "/api/v1/tracks/top_100" for ::1 at 2022-01-13 04:41:34 -0500
+Started GET "/api/v1/tracks/random" for ::1 at 2022-01-13 04:41:34 -0500
+Started GET "/api/v1/tracks" for ::1 at 2022-01-13 04:41:34 -0500
+Processing by Api::V1::PlaylistTracksController#index as */*
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mPlaylistTrack Load (14.1ms)[0m  [1m[34mSELECT "playlist_tracks".* FROM "playlist_tracks"[0m
+  ↳ app/controllers/api/v1/playlist_tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.24ms)
+Completed 200 OK in 32ms (Views: 6.0ms | ActiveRecord: 25.2ms)
+
+
+Processing by Api::V1::TracksController#index as */*
+Processing by Api::V1::PlaylistsController#index as */*
+  Parameters: {"user_id"=>"16"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mTrack Load (1.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/api/v1/tracks_controller.rb:5
+  [1m[36mPlaylist Load (2.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/api/v1/playlists_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 4.3ms)
+
+
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+Processing by Api::V1::TracksController#random as */*
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 1]]
+Processing by Api::V1::TracksController#top_100 as */*
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 2]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (11.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (97.45ms)
+Completed 200 OK in 107ms (Views: 78.6ms | ActiveRecord: 26.3ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (72.44ms)
+Completed 200 OK in 1560ms (Views: 83.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.15ms)
+Completed 200 OK in 2593ms (Views: 34.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/tracks/search?q=Lost%20souls" for ::1 at 2022-01-13 04:42:39 -0500
+Processing by Api::V1::TracksController#search as */*
+  Parameters: {"q"=>"Lost souls"}
+  [1m[36mUser Load (172.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.74ms)
+Completed 200 OK in 924ms (Views: 42.6ms | ActiveRecord: 172.3ms)
+
+
+Started GET "/api/v1/tracks/search?q=" for ::1 at 2022-01-13 04:42:49 -0500
+Processing by Api::V1::TracksController#search as */*
+  Parameters: {"q"=>""}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 1.9ms)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/api/v1/tracks_controller.rb:30:in `search'
+Started POST "/api/v1/login" for ::1 at 2022-01-13 04:44:28 -0500
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"test2823", "password"=>"[FILTERED]", "auth"=>{"username"=>"test2823", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (155.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2823"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (63.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = $1[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auth_controller.rb:8
+[active_model_serializers]   [1m[36mTrack Load (77.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "reviews" ON "tracks"."id" = "reviews"."track_id" WHERE "reviews"."user_id" = $1[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auth_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (228.7ms)
+Completed 202 Accepted in 1266ms (Views: 91.2ms | ActiveRecord: 296.5ms)
+
+
+Started GET "/api/v1/tracks/random" for ::1 at 2022-01-13 04:44:31 -0500
+Processing by Api::V1::TracksController#random as */*
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+Started GET "/api/v1/tracks" for ::1 at 2022-01-13 04:44:31 -0500
+Started GET "/api/v1/tracks/top_100" for ::1 at 2022-01-13 04:44:31 -0500
+Started GET "/api/v1/playlist_tracks" for ::1 at 2022-01-13 04:44:31 -0500
+Started GET "/api/v1/users/16/playlists" for ::1 at 2022-01-13 04:44:31 -0500
+  ↳ app/controllers/application_controller.rb:26
+Processing by Api::V1::PlaylistTracksController#index as */*
+  [1m[36mUser Load (23.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mPlaylistTrack Load (0.9ms)[0m  [1m[34mSELECT "playlist_tracks".* FROM "playlist_tracks"[0m
+  ↳ app/controllers/api/v1/playlist_tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.8ms)
+Completed 200 OK in 42ms (Views: 13.3ms | ActiveRecord: 24.2ms)
+
+
+Processing by Api::V1::TracksController#top_100 as */*
+Processing by Api::V1::TracksController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mTrack Load (23.0ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+  [1m[36mUser Load (50.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 14]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+Processing by Api::V1::PlaylistsController#index as */*
+  Parameters: {"user_id"=>"16"}
+[active_model_serializers]   [1m[36mReview Load (12.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."track_id" = $1[0m  [["track_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reviews" ON "users"."id" = "reviews"."user_id" WHERE "reviews"."track_id" = $1[0m  [["track_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/tracks_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.57ms)
+Completed 200 OK in 71ms (Views: 28.4ms | ActiveRecord: 41.1ms)
+
+
+  [1m[36mUser Load (48.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mPlaylist Load (75.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/api/v1/playlists_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.32ms)
+Completed 200 OK in 127ms (Views: 2.5ms | ActiveRecord: 123.2ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.79ms)
+Completed 200 OK in 1585ms (Views: 43.2ms | ActiveRecord: 5.4ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.08ms)
+Completed 200 OK in 2538ms (Views: 23.0ms | ActiveRecord: 50.1ms)
+
+

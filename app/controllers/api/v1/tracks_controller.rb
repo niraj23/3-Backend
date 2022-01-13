@@ -6,7 +6,7 @@ class Api::V1::TracksController < ApplicationController
   end
 
   def top_100
-    # top 50 playlist for 2021 track
+    # top 50 playlist for 2021 tracks
     # https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF
     s_tracks = RSpotify::Playlist.find("spotify","37i9dQZEVXbNG2KDcFcKOF").tracks
     @tracks = s_tracks.map do |s_track|
@@ -16,7 +16,7 @@ class Api::V1::TracksController < ApplicationController
     render json: @tracks
   end
 
-  def christmas
+  def random
     # https://open.spotify.com/playlist/0QDF5YDFRl3lJESWhoQXH8
     s_tracks = RSpotify::Playlist.find("filtr","0QDF5YDFRl3lJESWhoQXH8").tracks
     @tracks = s_tracks.map do |s_track|
